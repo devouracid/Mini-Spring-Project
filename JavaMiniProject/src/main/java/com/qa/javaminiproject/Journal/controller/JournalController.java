@@ -7,11 +7,11 @@ import com.qa.javaminiproject.blog.service.BlogService;
 
 @RestController
 @RequestMapping("blog")
-public class BlogController {
+public class JournalController {
 
-	private BlogService service;
+	private JournalService service;
 
-	public BlogController(BlogService service) {
+	public JournalController(JournalService service) {
 		this.service = service;
 	}
 	

@@ -1,4 +1,4 @@
-package com.qa.javaminiproject.blog.domain;
+package com.qa.javaminiproject.journal.domain;
 
 import java.time.LocalDateTime;
 
@@ -6,7 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-public class Blog {
+public class Journal {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,7 +15,7 @@ public class Blog {
 	private String textField;
 	private LocalDateTime createdAt;
 	
-	public Blog(Long id, String title, String textField, LocalDateTime createdAt) {
+	public Journal(Long id, String title, String textField, LocalDateTime createdAt) {
 		super();
 		this.id = id;
 		this.title = title;
